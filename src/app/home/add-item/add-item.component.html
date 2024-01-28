@@ -1,0 +1,39 @@
+<div class="col-md-6 offset-md-3 mt-5">
+  <h3 class="text-center">Add Item</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label> Item Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="itemName"
+        [(ngModel)]="item.itemName"
+        name="itemName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label> Quantity</label>
+      <input
+        type="number"
+        class="form-control"
+        id="quantity"
+        [(ngModel)]="item.quantity"
+        name="quantity"
+      />
+    </div>
+
+    <div class="form-group">
+      <label> Description</label>
+      <input
+        type="text"
+        class="form-control"
+        id="description"
+        [(ngModel)]="item.description"
+        name="description"
+      />
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
